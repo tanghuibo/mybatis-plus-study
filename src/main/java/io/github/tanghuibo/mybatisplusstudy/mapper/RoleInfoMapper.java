@@ -1,7 +1,7 @@
 package io.github.tanghuibo.mybatisplusstudy.mapper;
 
 import com.baomidou.dynamic.datasource.annotation.DS;
-import io.github.tanghuibo.mybatisplusstudy.entity.User;
+import io.github.tanghuibo.mybatisplusstudy.entity.RoleInfo;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -11,16 +11,10 @@ import org.apache.ibatis.annotations.Mapper;
  * </p>
  *
  * @author tanghuibo
- * @since 2022-04-04
+ * @since 2022-04-05
  */
 @Mapper
-@DS("db1")
-public interface UserMapper extends BaseMapper<User> {
-
-    /**
-     * 获取第一个
-     * @return
-     */
-    User getFirst();
+@DS("db2")
+public interface RoleInfoMapper extends BaseMapper<RoleInfo> {
 
 }
